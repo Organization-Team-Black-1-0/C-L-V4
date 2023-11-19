@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>check-list</title>
+</head>
+
+<body>
+    <header class="header-check-list">
+        <button class="close" onclick="window.close();">Salir</button>
+        
+    </header>
+
+    <div class="vista-check-list">
+        <h2>Check-list higiene y confort</h2>
+        <h3>Selecciona la cara <img src="./utilities/img/happiness.png" alt="Marca si esta bien"
+                class="icon-check-list"> SI
+            CUMPLE, si NO CUMPLE <img src="./utilities/img/sad.png" alt="Marca esta mal" class="icon-check-list">
+        </h3>
+        
+        <form name="quizFormRadio" onsubmit="return verifycheckradio()">
+            
+            <div class="container">
+                <!-- row-0 -->
+                <div>
+                    <img src="./utilities/img/happiness.png" alt="Marca si esta bien" class="icon-check-list">
+                </div>
+                <div>
+                    <img src="./utilities/img/sad.png" alt="Marca esta mal" class="icon-check-list">
+                </div>
+                <div>
+                </div>
+                <!-- row-1 -->
+                <div>
+                    <input name="checklist1" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist1" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿El cabello lo tiene limpio y peinado?</a>
+                </div>
+                <!-- row-2 -->
+                <div>
+                    <input name="checklist2" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist2" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿Se observa los ojos sin lagañas o alguna secreción?</a>
+                </div>
+                <!-- row-3 -->
+                <div>
+                    <input name="checklist3" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist3" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿No tiene mucosidad en la nariz?</a>
+                </div>
+                <!-- row-4 -->
+                <div>
+                    <input name="checklist4" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist4" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿La boca está higienizada?</a>
+                </div>
+                <!-- row-5 -->
+                <div>
+                    <input name="checklist5" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist5" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿Los oídos están limpios e higienizados?</a>
+                </div>
+                <!-- row-6 -->
+                <div>
+                    <input name="checklist6" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist6" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿Detrás de los oídos y el cuello están limpios?</a>
+                </div>
+                <!-- row-7 -->
+                <div>
+                    <input name="checklist7" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist7" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿El cuerpo está limpio?</a>
+                </div>
+                <!-- row-8 -->
+                <div>
+                    <input name="checklist8" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist8" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿La piel no está reseca o deshidratada?</a>
+                </div>
+                <!-- row-9 -->
+                <div>
+                    <input name="checklist9" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist9" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿Las uñas no las tiene sucias y largas?</a>
+                </div>
+                <!-- row-10 -->
+                <div>
+                    <input name="checklist10" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist10" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿La ropa está limpia?</a>
+                </div>
+                <!-- row-11 -->
+                <div>
+                    <input name="checklist11" type="radio" value="ok" />
+                </div>
+                <div>
+                    <input name="checklist11" type="radio" value="notok" checked="checked" />
+                </div>
+                <div>
+                    <a>¿Las sábanas están sucias?</a>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+            <!-- <input type="submit" value="Enviar">  -->
+            <div id="resultado"></div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+
+    <body>
+
+</html>
